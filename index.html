@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fake-Agent User-Agent String Generator</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Fake browser user-agent generator" />
+  <meta name="author" content="BRADSEC" />
+  <meta name="repo" content="github.com/bradsec" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#202020" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="bsbase-min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <nav class="navbar">
+                <div id="branding"><a href="https://github.com/bradsec/fakeagent">Fake-<span class="bold">Agent</span></a></div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#" id="theme-switcher">SWITCH-THEME</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+          <h1>A vanilla JavaScript fake browser User-Agent string generator</h1>
+          <p>Mimic user-agent strings for Chrome, Firefox, Edge, and Safari, on Windows, Linux, MacOS, iPhone and Android.</p>
+          <h2>Number of User-Agent Strings:</h2>
+          <select id="numUserAgents">
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+          </select>
+          <h2>User-Agent Strings:</h2>
+          <button id="formatList">List</button>
+          <button id="formatJSON">JSON</button>
+          <button id="formatCSV">CSV</button>
+          <button id="copyButton">Copy to Clipboard</button>
+          <textarea id="userAgentOutput" rows="10" readonly></textarea>
+      </main>
+    <footer id="footer">
+        <div class="footer-content"><span id="footer-repo"></span></div>             
+         <div class="footer-bottom"><span id="footer-copyright"></span></div>
+    </footer>
+</div>
+  <script>
+
+
+  </script>
+  <script src="fakeagent.js"></script>
+  <script src="bsbase-min.js"></script>
+</body>
+</html>
